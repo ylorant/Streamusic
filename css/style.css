@@ -1,0 +1,118 @@
+.container
+{
+    width: 960px;
+    margin: auto;
+}
+
+#add-file
+{
+    display: none;
+}
+
+#player
+{
+    background: #00ff00;
+    padding: 20px;
+    width: 900px;
+    height: 320px;
+    border: 1px solid #000; 
+
+    position: relative;
+}
+
+#player:after
+{
+    content: " ";
+    clear: both;
+}
+
+.album-art-container
+{
+    float: left;
+}
+
+.album-art-container img
+{
+    max-width: 320px;
+    max-height: 320px;
+}
+
+.song-info
+{
+    float: left;
+    margin-left: 20px;
+    width: 560px;
+
+    font-family: Calibri;
+    font-size: 48px;
+    line-height: 1.4em;
+    color: white;
+}
+
+.song-info > div
+{
+    height: 84px;
+    line-height: 1em;
+    margin-bottom: 12px;
+
+    overflow: hidden;
+}
+
+.song-progress-container
+{
+    height: auto !important;
+}
+
+#song-progress
+{
+    /* border-left: 3px solid #000; */
+    /* border-right: 3px solid #000; */
+    width: 550px;
+    height: 32px;
+
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#song-progress-fill
+{
+    width: 50%;
+    height: 100%;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background-color: #4286f4;
+}
+
+#playlist
+{
+    border: 1px solid #000;
+    margin-right: 16px;
+    height: 300px;
+
+    list-style-type: none;
+}
+
+#playlist
+{
+    padding: 5px 10px;
+    font-family: Calibri;
+}
+
+#playlist li:nth-child(2n)
+{
+    background-color: #eee;
+}
+
+#playlist li.active
+{
+    background-color: #91bbff;
+}
+
+#add-file-input
+{
+    display: none;
+}

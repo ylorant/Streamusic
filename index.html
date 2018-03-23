@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Hedgeplay</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="player">
+                <div class="album-art-container">
+                    <img id="album-art" src="" />
+                </div>
+
+                <div class="song-info">
+                    <div id="song-title"></div>
+                    <div id="song-artist"></div>
+                    <div id="song-album"></div>
+                    <div class="song-progress-container">
+                        <div id="song-progress">
+                            <div id="song-progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <audio id="audio"></audio>
+            </div>
+
+            <div class="playlist-container">
+                <h2>Playlist</h2>
+
+                <ul id="playlist">
+                    
+                </ul>
+                <div class="controls">
+                    <input type="file" id="add-file-input" multiple />
+                    <button id="add-file-button">Add file</button>
+                    <button id="previous-button">Previous</button>
+                    <button id="play-button">Play</button>
+                    <button id="stop-button">Stop</button>
+                    <button id="next-button">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/jsmediatags.min.js"></script>
+        <script src="js/player.js"></script>
+        <script src="js/playlist.js"></script>
+        <script src="js/action-buttons.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
