@@ -84,7 +84,7 @@ var ActionButtons = {
 
     onStop: function(noAction)
     {
-        if(!noAction)
+        if(!(noAction === true))
             this.options.player.stop();
         this.elements.playButton.html('Play');
     },
